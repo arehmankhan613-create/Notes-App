@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Notes App Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>
+<i class="fa-solid fa-note-sticky"></i>
+Notes App
+</h1>
+
+<button id="themeBtn">🌙</button>
+
+</header>
+
+<div class="top-bar">
+
+<input
+type="text"
+id="search"
+placeholder="🔍 Search Notes...">
+
+<button id="addBtn">
+<i class="fa-solid fa-plus"></i>
+Add Note
+</button>
+
+</div>
+
+<div id="notesContainer">
+
+</div>
+
+<!-- Popup -->
+
+<div class="popup" id="popup">
+
+<div class="popup-content">
+
+<h2>New Note</h2>
+
+<input
+type="text"
+id="noteTitle"
+placeholder="Title">
+
+<textarea
+id="noteText"
+placeholder="Write your note..."></textarea>
+
+<div class="buttons">
+
+<button id="saveBtn">
+Save
+</button>
+
+<button id="closeBtn">
+Cancel
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
