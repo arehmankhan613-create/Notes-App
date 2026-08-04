@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Notes App Pro</title>
+<title>Advanced Notes Pro</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -26,7 +27,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <h1>
 <i class="fa-solid fa-note-sticky"></i>
-Notes App
+Advanced Notes Pro
 </h1>
 
 <button id="themeBtn">🌙</button>
@@ -47,6 +48,23 @@ Add Note
 
 </div>
 
+<div class="toolbar">
+
+<select id="sortNotes">
+
+<option value="new">Newest First</option>
+<option value="old">Oldest First</option>
+<option value="az">A - Z</option>
+
+</select>
+
+<button id="exportBtn">
+<i class="fa-solid fa-file-pdf"></i>
+Export
+</button>
+
+</div>
+
 <div id="notesContainer">
 
 </div>
@@ -57,7 +75,7 @@ Add Note
 
 <div class="popup-content">
 
-<h2>New Note</h2>
+<h2 id="popupTitle">New Note</h2>
 
 <input
 type="text"
@@ -68,13 +86,23 @@ placeholder="Title">
 id="noteText"
 placeholder="Write your note..."></textarea>
 
+<select id="noteCategory">
+
+<option value="Personal">📒 Personal</option>
+<option value="Study">📚 Study</option>
+<option value="Work">💼 Work</option>
+
+</select>
+
 <div class="buttons">
 
 <button id="saveBtn">
+<i class="fa-solid fa-floppy-disk"></i>
 Save
 </button>
 
 <button id="closeBtn">
+<i class="fa-solid fa-xmark"></i>
 Cancel
 </button>
 
