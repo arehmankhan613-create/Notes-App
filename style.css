@@ -252,4 +252,182 @@ font-size:24px;
 
 }
 
+}/* ========================= */
+/* Toolbar */
+/* ========================= */
+
+.toolbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:15px;
+margin-bottom:25px;
+flex-wrap:wrap;
+}
+
+#sortNotes,
+#noteCategory{
+
+padding:12px;
+border:none;
+outline:none;
+border-radius:12px;
+background:#1e293b;
+color:white;
+font-size:15px;
+cursor:pointer;
+
+}
+
+#exportBtn{
+
+padding:12px 20px;
+border:none;
+border-radius:12px;
+background:#2563eb;
+color:white;
+cursor:pointer;
+font-size:15px;
+transition:.3s;
+
+}
+
+#exportBtn:hover{
+
+transform:translateY(-2px);
+background:#1d4ed8;
+
+}
+
+/* ========================= */
+/* Note Card */
+/* ========================= */
+
+.note{
+
+transition:.3s;
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.note:hover{
+
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,.45);
+
+}
+
+.note small{
+
+display:block;
+margin:10px 0;
+color:#94a3b8;
+font-size:13px;
+
+}
+
+.note .actions{
+
+display:flex;
+gap:10px;
+margin-top:15px;
+
+}
+
+.note button{
+
+flex:1;
+transition:.3s;
+
+}
+
+.edit:hover{
+
+background:#d97706;
+
+}
+
+.delete:hover{
+
+background:#dc2626;
+
+}
+
+/* ========================= */
+/* Popup Animation */
+/* ========================= */
+
+.popup{
+
+backdrop-filter:blur(8px);
+
+}
+
+.popup-content{
+
+animation:popup .25s ease;
+
+}
+
+@keyframes popup{
+
+from{
+
+transform:scale(.8);
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+opacity:1;
+
+}
+
+}
+
+/* ========================= */
+/* Scrollbar */
+/* ========================= */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#2563eb;
+border-radius:20px;
+
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media(max-width:768px){
+
+.toolbar{
+
+flex-direction:column;
+align-items:stretch;
+
+}
+
+#sortNotes,
+#exportBtn{
+
+width:100%;
+
+}
+
+.popup-content{
+
+width:95%;
+
+}
+
 }
